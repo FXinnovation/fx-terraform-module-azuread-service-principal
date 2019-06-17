@@ -14,7 +14,7 @@ resource "random_string" "this" {
   special = true
 
   keepers = {
-    service_principal = "${azuread_service_principal.this_sp.id}"
+    service_principal = "${azuread_service_principal.this.id}"
   }
 }
 
