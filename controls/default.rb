@@ -1,9 +1,9 @@
 #
-# inspec_profile::azuread-principal-service
+# inspec_profile::azuread-service-principal
 # controls::default
 #
 # author:cloudsquad@fxinnovation.com
-# description: Default controls for azuread-principal-service
+# description: Default controls for azuread-service-principal
 #
 
 # NOTE: Inspec is not yet compatible with this resource. Tests should be written here
