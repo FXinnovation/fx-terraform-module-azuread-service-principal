@@ -1,0 +1,8 @@
+name: azuread-serviceprincipal
+title: Azure AD Service Principal
+maintainer: FXinnovation, Inc.
+copyright: FXinnovaion, Inc.
+copyright_email: cloudsquad@fxinnovation.com
+license: MIT
+summary: Inspec for azuread service principal module
+version: 0.1.0
