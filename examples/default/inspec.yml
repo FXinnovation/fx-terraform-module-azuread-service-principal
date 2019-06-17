@@ -1,0 +1,11 @@
+name: azuread-service-principal-default
+title: Azure AD Service Principal for default example
+maintainer: FXinnovation, Inc.
+copyright: FXinnovaion, Inc.
+copyright_email: cloudsquad@fxinnovation.com
+license: MIT
+summary: Inspec for azuread service principal default example
+version: 0.1.0
+depends:
+  - name: azuread-service-principal
+    path: ../../
