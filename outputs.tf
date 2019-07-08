@@ -1,6 +1,6 @@
 output "client_id" {
   value = element(
-    contact(azuread_service_principal.this.*.application_id, [""]),
+    concat(azuread_service_principal.this.*.application_id, [""]),
     0,
   )
 }
@@ -24,19 +24,19 @@ output "service_principal_id" {
 
 output "service_principal_application_id" {
   value = element(
-    contact(azuread_service_principal.this.*.application_id, [""]),
+    concat(azuread_service_principal.this.*.application_id, [""]),
     0,
   )
 }
 
 output "service_principal_object_id" {
-  value = element(contact(azuread_service_principal.this.*.object_id, [""]), 0)
+  value = element(concat(azuread_service_principal.this.*.object_id, [""]), 0)
 }
 
 output "application_application_id" {
-  value = element(contact(azuread_application.this.*.application_id, [""]), 0)
+  value = element(concat(azuread_application.this.*.application_id, [""]), 0)
 }
 
 output "application_object_id" {
-  value = element(contact(azuread_application.this.*.object_id, [""]), 0)
+  value = element(concat(azuread_application.this.*.object_id, [""]), 0)
 }
