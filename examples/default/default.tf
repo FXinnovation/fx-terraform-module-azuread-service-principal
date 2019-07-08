@@ -1,24 +1,24 @@
 provider "azuread" {
   version         = "~> 0.4.0"
-  client_id       = "${var.arm_client_id}"
-  client_secret   = "${var.arm_client_secret}"
-  subscription_id = "${var.arm_subscription_id}"
-  tenant_id       = "${var.arm_tenant_id}"
+  client_id       = "${var.client_id}"
+  client_secret   = "${var.client_secret}"
+  subscription_id = "${var.subscription_id}"
+  tenant_id       = "${var.tenant_id}"
 }
 
-variable "arm_client_id" {
+variable "client_id" {
   type = "string"
 }
 
-variable "arm_client_secret" {
+variable "client_secret" {
   type = "string"
 }
 
-variable "arm_subscription_id" {
+variable "subscription_id" {
   type = "string"
 }
 
-variable "arm_tenant_id" {
+variable "tenant_id" {
   type = "string"
 }
 
