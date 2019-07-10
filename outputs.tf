@@ -1,4 +1,5 @@
 output "client_id" {
+  sensitive = true
   value = element(
     concat(azuread_service_principal.this.*.application_id, [""]),
     0,
@@ -7,8 +8,7 @@ output "client_id" {
 
 output "client_secret" {
   sensitive = true
-
-  value = element(concat(random_string.this.*.result, [""]), 0)
+  value     = element(concat(random_string.this.*.result, [""]), 0)
 }
 
 output "service_principal_password_id" {
