@@ -3,7 +3,7 @@ variable "application_name" {
   description = "Service Principal name"
 }
 
-variable "enable" {
+variable "enabled" {
   type        = string
   default     = "true"
   description = "Set to true to enable to module, set false to disable it."
