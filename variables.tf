@@ -4,8 +4,8 @@ variable "application_name" {
 }
 
 variable "enabled" {
-  type        = string
-  default     = "true"
+  type        = bool
+  default     = true
   description = "Set to true to enable to module, set false to disable it."
 }
 
