@@ -37,6 +37,6 @@ resource "azurerm_role_assignment" "service_principal" {
   role_definition_name = var.role_name
   principal_id         = azuread_service_principal.this.id
   depends_on = [
-    "azurerm_azuread_service_principal_password.this"
+    "azuread_service_principal_password.this"
   ]
 }
