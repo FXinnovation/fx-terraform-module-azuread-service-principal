@@ -12,6 +12,7 @@ Please look at the examples to understand how to use this module.
 |------|-------------|:----:|:-----:|:-----:|
 | application\_name | Service Principal name | string | n/a | yes |
 | enabled | Set to true to enable to module, set false to disable it. | string | `"true"` | no |
+| role\_name | Role for the Service Principal you're creating. | string | `"Contributor"` | no |
 
 ## Outputs
 

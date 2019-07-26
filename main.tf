@@ -1,3 +1,5 @@
+data "azurerm_subscription" "this" {}
+
 resource "azuread_application" "this" {
   count = var.enabled == "false" ? 0 : 1
   name  = var.application_name
@@ -27,8 +29,13 @@ resource "azuread_service_principal_password" "this" {
   lifecycle {
     ignore_changes = [end_date]
   }
+}
 
-  provisioner "local-exec" {
-    command = "sleep 30"
-  }
+resource "azurerm_role_assignment" "service_principal" {
+  scope                = data.azurerm_subscription.this.id
+  role_definition_name = var.role_name
+  principal_id         = azurerm_azuread_service_principal.service_principal.id
+  depends_on = [
+    "azurerm_azuread_service_principal_password.this"
+  ]
 }
