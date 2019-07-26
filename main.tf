@@ -35,7 +35,7 @@ resource "azurerm_role_assignment" "service_principal" {
   count                = var.enabled ? 1 : 0
   scope                = data.azurerm_subscription.this.id
   role_definition_name = var.role_name
-  principal_id         = azuread_service_principal.this.id
+  principal_id         = azuread_service_principal.this[0].id
   depends_on = [
     "azuread_service_principal_password.this"
   ]
