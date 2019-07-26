@@ -8,7 +8,7 @@ output "client_id" {
 
 output "client_secret" {
   sensitive = true
-  value     = element(concat(random_string.this.*.result, [""]), 0)
+  value     = element(concat(azuread_service_principal_password.this.value, [""]), 0)
 }
 
 output "service_principal_password_id" {

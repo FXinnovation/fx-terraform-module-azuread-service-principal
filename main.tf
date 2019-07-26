@@ -10,8 +10,8 @@ resource "azuread_service_principal" "this" {
 
 resource "random_string" "this" {
   count   = var.enabled == "false" ? 0 : 1
-  length  = 16
-  special = true
+  length  = 20
+  special = false
 
   keepers = {
     service_principal = azuread_service_principal.this[0].id
