@@ -7,6 +7,7 @@ provider "azuread" {
 }
 
 provider "azurerm" {
+  features {}
   version         = ">= 2.0.0"
   client_id       = var.client_id
   client_secret   = var.client_secret
