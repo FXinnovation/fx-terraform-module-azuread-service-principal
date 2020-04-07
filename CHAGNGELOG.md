@@ -1,4 +1,4 @@
-# 1.0.6 
+# 1.0.6
 
 * feat: Update `azurerm` provider to `2.x.x`
 
