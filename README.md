@@ -24,7 +24,7 @@ Please look at the examples to understand how to use this module.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| application\_name | Service Principal name | `string` | n/a | yes |
+| application\_name | Service Principal name. | `string` | n/a | yes |
 | enabled | Set to true to enable to module, set false to disable it. | `bool` | `true` | no |
 | role\_name | Role for the Service Principal you're creating. | `string` | `"Contributor"` | no |
 

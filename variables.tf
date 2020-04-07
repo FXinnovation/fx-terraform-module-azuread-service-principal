@@ -1,6 +1,6 @@
 variable "application_name" {
   type        = string
-  description = "Service Principal name"
+  description = "Service Principal name."
 }
 
 variable "enabled" {
